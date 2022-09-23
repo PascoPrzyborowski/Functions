@@ -135,7 +135,46 @@
 # store = greet()
 # print(store)
 
-def full_names(first_name, last_name):
-    return f"{first_name}, {last_name}"
+# def full_names(first_name, last_name):
+#     return f"{first_name}, {last_name}"
 
-print(full_names('pasco', 'me_is'))
+# print(full_names('pasco', 'me_is'))
+
+# def full_name(first_name="John", last_name="Doe"):
+#     return f"Good Morning {first_name}{last_name}"
+
+# print(full_name("Peter"))
+
+# def greet(first_name="John ", last_name="Doe ", salutation="Dear Sir/Madam "):
+#     return f"{salutation}{first_name}{last_name} you are invited"
+
+# print(greet())
+
+# def full_name(first_name, middle_name, religious_name, maritial_name, last_name):
+#    return f"{first_name}, {middle_name}, {religious_name}, {maritial_name}, {last_name}"
+
+def full_name(*args):#"list Tuple"
+     print(args)
+     #return f"{args[0]} {args[1]} {args[2]} {args[3]}"
+
+print(full_name("Felipe", "Gonzales", "Pedro","Alfonso"))
+
+
+
+#shoe_sizes = (3,4,5,6,7,) #Tuple not changed
+shoe_sizes = [3,4,5,6,7,]   #list can be changed
+print(shoe_sizes)
+shoe_sizes.append(100)
+print(shoe_sizes)
+shoe_sizes.pop(5)
+print(shoe_sizes)
+shoe_sizes.remove(5)
+print(shoe_sizes)
+shoe_sizes.insert(1,"Gotcha!")
+print(shoe_sizes)
+shoe_sizes[index]=int(input("What shoe do u want"))
+print(shoe_sizes)
+print(shoe_sizes[0])
+print(shoe_sizes[4])
+print(shoe_sizes[-1])
+
