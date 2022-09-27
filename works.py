@@ -115,16 +115,30 @@
 # print(type(last_name))
 
 import time
+#passing by value ! Numbers and Strings
 
 names = {"first_name":"Jullian","last_name":"Assange"} #init dict
 time.sleep(1)
+print("Original Dict:")
+print()
+print(names)
+print()
+print("Now changed with Function:")
+print()
 # "Pass by reference" variables can change
 def full_name(last_name):
     # variations 
-    names["first_name"] = "John" #add and rename item
+    names["first_name"] = input("enter a name: ") #add and rename item
+    #names["first_name"] = "John" #add and rename item
     names["last_name"] = "Snowden" #add and rename item
     return names
 
 full_name(names) # output
 print(names)
 print(type(names)) # type of 
+
+
+
+
+
+
